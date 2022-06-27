@@ -1,0 +1,91 @@
+@media screen and (min-width: 1024px){
+    .kanban{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 80%;
+        border-radius: 50px;
+        margin: 0 auto;
+        position: relative;
+        top: 80px;
+    }
+    .kanban *{
+        font-family: var(--primaryFont);
+    }
+    .kanban__column{
+        flex: 1;
+        list-style-type: none;
+    }
+    .kanban__column:not(:last-child){
+        margin-right: 30px;
+    }
+    .kanban__column-title{
+        font-size: 1.4rem;
+        color: var(--whiteColor);
+        user-select: none;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 10px;
+        padding: 4px 0;
+        width: 80%;
+    }
+    .kanban__item{
+        padding: 8px 0;
+        display: block;
+    }
+    .kanban__item-input{
+        padding: 2rem;
+        width: 80%;
+        height: 8rem;
+        background-color: var(--whiteColor);
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        resize: none;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+        position: relative;
+        bottom: 24px;
+        border-radius: 5px;
+    }
+    .kanban__item-input:hover{
+        /* height: 120px; */
+        /* transform: scale(1.02); */
+        transition: .5s;
+        height: 10rem;
+        /* opacity: ; */
+    }
+    .kanban__item-input::placeholder{
+        font-size: 1.2rem;
+        font-weight: 500;
+        opacity: 0.6;
+        /* text-align: center; */
+    }
+    .kanban__dropZone{
+        height: 20px;
+        transition: background 0.15s, height 0.15s;
+    }
+    .kanban__dropZone--active{
+        height: 40px;
+        background: rgba(0, 0, 0, 0.001);
+    }
+    .kanban__add-item{
+        min-width: 120px;
+        padding: 10px 24px;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--whiteColor);
+        background-color: var(--primaryColor1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 7px;
+        margin-left: 5rem;
+    }  
+    .kanban__add-item:hover{
+        transition: 0.5s;
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}

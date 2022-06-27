@@ -1,0 +1,33 @@
+.wrapper{
+    min-height: 1024px;
+    overflow: hidden;
+    background-color: var(--whiteColor);
+}
+.wrapperHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--whiteColor);
+    padding: 0 8rem;
+}
+.headerLogo{
+    cursor: pointer;
+}
+.headerLogoImg{
+    width: 200px;
+}
+.headerList{
+    display: flex;
+    list-style-type: none;
+}
+.headerListItem{
+    margin-left: 24px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.signInBtn{
+
+}
+.signUpBtn{
+
+}

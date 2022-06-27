@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: var(--primaryFont);
+}
+:root{
+    --primaryColor1: #150050;
+    --primaryColor2: #3F0071;
+
+    --navyColor1: #242F9B;
+    --navyColor2: #646FD4;
+    --navyColor3: #9BA3EB;
+    --navyColor4: #fbfbfb;
+
+    --primaryColor3: #23120B;
+    --primaryColor4: #21209C;
+    --primaryColor5: #FDB827;
+    --primaryColor6: #F1F1F1;
+    
+    --redColor1: #FF2442;
+    --redColor2: #FF1818;
+    --redColor3: #DD0A35;
+    --redColor4: #F94C66;
+
+    --yellowColor1: #ffb515;
+    --yellowColor2: #FFCD38;
+    --yellowColor3: #FFD124;
+    --yellowColor4: #F6830F;
+    --yellowColor5: #f7a817;
+
+    --comboColor1: #051367;
+    --comboColor2: #F24C4C;
+    --comboColor3: #FFC93C;
+    --comboColor4: #44d3c5;
+
+    --greenColor1: #00dbcd;
+    --greenColor2: #53BF9D;
+
+    --blackColor: #000;
+    --whiteColor: #fff;
+
+    --primaryFont: "Poppins", sans-serif;
+}
+/* Reuse class */
+.btn{
+    font-family: var(--primaryFont);
+    width: 120px;
+    height: 45px;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin-top: -24px;
+}
+.btn:hover{
+    transform: scale(1.02);
+}
